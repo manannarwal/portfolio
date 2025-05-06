@@ -11,15 +11,15 @@ const Projects = () => {
       title: "MovFlix",
       description: "Movies/Series Streaming Website",
       technologies: ["React JS", "JS", "Tailwind", "HTML", "CSS"],
-      liveLink: "https://watchmojo.netlify.app",
+      liveLink: "https://movflix.manannarwal.me/",
       codeLink: "https://github.com/manannarwal/movflix",
       imageUrl: project1Image  // Changed to imageUrl for clarity
     },
     {
       title: "MuseMate",
       description: "Chatbot based ticketing website for museums",
-      technologies: ["React JS", "Express", "Particle JS", "Node.js", "GSAP", "Python", "PHP"],
-      liveLink: "https://manannarwal.me/SIH24/",
+      technologies: ["React JS", "Express", "Particle JS", "Node.js", "GSAP", "Python", "PHP", "Ollama"],
+      liveLink: "https://musemate.manannarwal.me/",
       codeLink: "https://github.com/manannarwal/SIH24",
       imageUrl: project2Image  // Changed to imageUrl for clarity
     }
@@ -28,11 +28,9 @@ const Projects = () => {
   return (
     <div>
       <div className="mx-8 font-['Poppins'] tracking-wider">
-        <div className="mt-10 flex items-center justify-between">
-          <div className="flex items-center">
-            <p className="text-2xl text-[#a6bbcc] font-extrabold">#projects</p>
-            <div className="ml-4 h-0.5 w-40 bg-[#a6bbcc]"></div>
-          </div>
+        <div className="mt-10 flex items-center">
+          <p className="text-2xl text-[#a6bbcc] font-extrabold">projects</p>
+          <div className="ml-4 h-0.5 flex-grow bg-[#a6bbcc]"></div>
         </div>
         
         {/* Projects Grid */}

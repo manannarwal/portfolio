@@ -1,5 +1,4 @@
-import React from 'react'
-
+import React from "react";
 
 const About = () => {
   return (
@@ -10,11 +9,16 @@ const About = () => {
           <div className="ml-4 h-0.5 flex-grow bg-[#a6bbcc]"></div>
         </div>
         <div className="mx-3 mt-4 align-middle text-justify text-lg ">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere unde quaerat eos temporibus. Exercitationem animi vero consequuntur cum dolorem tenetur nobis inventore sit neque commodi.
+          Self-motivated and detail-oriented individual with a strong foundation
+          in web development, software testing, and multimedia content creation.
+          Proficient in leveraging technical expertise to ensure quality
+          solutions and impactful results. Seeking an entry-level role in the
+          Technical Department to contribute to innovative projects and enhance
+          professional skills.
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;
