@@ -1,4 +1,4 @@
-# 🌸 Nikhila's Portfolio Website
+# 🌸 Manan Narwal's Portfolio Website
 
 A modern, responsive portfolio website built with Next.js 15, TypeScript, and Tailwind CSS v4, featuring a beautiful lavender and teal color scheme.
 
@@ -30,7 +30,7 @@ Visit [http://localhost:3000](http://localhost:3000) to see the site.
   - Theme toggle (light/dark mode)
   
 - **Hero Section**
-  - Gradient text with Nikhila's name
+  - Gradient text with Manan Narwal name
   - Animated 3D stars background using Three.js
   - Call-to-action buttons
   - Scroll indicator animation
@@ -135,4 +135,4 @@ src/
 
 ## 📝 License
 
-© 2024 Nikhila Koneru. All rights reserved.
+© 2024 Manan Narwal. All rights reserved.

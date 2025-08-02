@@ -1,8 +1,6 @@
 import { Hero } from "@/components/sections/hero";
 import { FeaturedProjects } from "@/components/home/featured-projects";
 import { SkillsShowcase } from "@/components/home/skills-showcase";
-import { Achievements } from "@/components/home/achievements";
-import { Testimonials } from "@/components/home/testimonials";
 import { Analytics } from "@vercel/analytics/next"
 export default function HomePage() {
   return (
@@ -10,8 +8,6 @@ export default function HomePage() {
       <Hero />
       <FeaturedProjects />
       <SkillsShowcase />
-      <Achievements />
-      <Testimonials />
     </>
   );
 }

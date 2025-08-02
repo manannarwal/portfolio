@@ -121,7 +121,7 @@ export function Navbar() {
                   transition={{ duration: 0.5 }}
                   className="gradient-text"
                 >
-                  Nikhila Koneru
+                  Manan Narwal
                 </motion.span>
               </Link>
             </div>
@@ -185,7 +185,7 @@ export function Navbar() {
                           href="/"
                           className="font-display text-2xl font-bold transition-colors hover:text-primary"
                         >
-                          <span className="gradient-text">Nikhila Koneru</span>
+                          <span className="gradient-text">Manan Narwal</span>
                         </Link>
                         <ThemeToggle />
                       </div>

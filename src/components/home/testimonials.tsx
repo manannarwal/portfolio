@@ -8,7 +8,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 const testimonials = [
   {
     id: 1,
-    quote: "Nikhila is an invaluable and crucial member of our team. Her technical expertise, problem-solving abilities, and collaborative spirit have made a significant impact on our projects. She consistently goes above and beyond, making her an exceptional colleague and friend.",
+    quote: "Manan is an invaluable and crucial member of our team. Her technical expertise, problem-solving abilities, and collaborative spirit have made a significant impact on our projects. She consistently goes above and beyond, making her an exceptional colleague and friend.",
     author: "Achyut Katiyar",
     role: "5x Hackathon Winner",
     company: "",
@@ -16,7 +16,7 @@ const testimonials = [
   },
   {
     id: 2,
-    quote: "Nikhila demonstrates exceptional proficiency in DevOps environments. Her deep understanding of CI/CD pipelines, cloud infrastructure, and automation tools has significantly improved our deployment processes. She's a true asset to any technical team.",
+    quote: "Manan demonstrates exceptional proficiency in DevOps environments. Her deep understanding of CI/CD pipelines, cloud infrastructure, and automation tools has significantly improved our deployment processes. She's a true asset to any technical team.",
     author: "Anand Pinnamaneni",
     role: "Salesforce Developer",
     company: "",

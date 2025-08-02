@@ -10,7 +10,7 @@ export const generateMetadata = (): Metadata => {
     },
     description: SITE_CONFIG.description,
     keywords: [
-      "Nikhila Koneru",
+      "Manan Narwal",
       "Portfolio",
       "Full Stack Developer",
       "Cloud Computing",
@@ -52,7 +52,7 @@ export const generateMetadata = (): Metadata => {
       title: SITE_CONFIG.name,
       description: SITE_CONFIG.description,
       images: [SITE_CONFIG.ogImage],
-      creator: "@nikhilakoneru",
+      creator: "@manannarwal",
     },
     robots: {
       index: true,

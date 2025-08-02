@@ -1,4 +1,3 @@
-// Experience data from Nikhila's resume
 
 export interface Experience {
   id: string;
@@ -15,52 +14,29 @@ export interface Experience {
 
 export const experienceData: Experience[] = [
   {
-    id: "tech-mahindra",
-    company: "Tech Mahindra Limited",
-    role: "Cloud Computing Intern",
-    duration: "Feb 2024 - Jul 2024",
-    location: "Hyderabad, India",
-    description: "Worked on optimizing cloud infrastructure and implementing automation strategies across multi-cloud environments.",
+    id: "banao",
+    company: "Banao Technologies",
+    role: "Software Testing Intern",
+    duration: "Jun 2023 - Nov 2023",
+    location: "New Delhi, India",
+    description: "Enhanced user experiences on iOS & Android apps by identifying bugs and validating performance fixes, contributing to a 40% reduction in load time. Executed manual and regression testing across multiple builds, ensuring seamless API integration and UI functionality. Reported critical issues and verified fixes using tools like Postman, Chrome DevTools, and Figma.",
     achievements: [
-      "Accomplished 30% performance boost in deployment pipelines, as measured by CI/CD job execution time, by optimizing cloud infrastructure across Azure and AWS",
-      "Improved resource allocation by 25%, as verified by monitoring dashboards, by implementing infrastructure-as-code strategies and cost-optimization techniques",
-      "Automated task workflows across multi-cloud environments, reducing manual intervention by 40%, by scripting repeatable deployments using Azure CLI and AWS SDK"
+
     ],
-    technologies: ["AWS", "Azure", "CI/CD", "Infrastructure as Code", "Azure CLI", "AWS SDK", "Cloud Computing", "DevOps"],
-    logo: "/images/logos/tech-mahindra.png",
+    technologies: ["Figma", "Postman", "Regression Testing", "Adhoc Testing", "Compatibility Testing"],
     type: "internship"
   },
   {
-    id: "srm-ml-intern",
-    company: "SRM University, AP",
-    role: "ML Research Intern - Distributed Systems",
-    duration: "Jan 2024 - Jun 2024",
-    location: "Andhra Pradesh, India",
-    description: "Designed AI-powered caching system using machine learning models to optimize data retrieval in distributed systems.",
+    id: "scientificatt",
+    company: "Scientificatt",
+    role: "Sales and Business Development Executive",
+    duration: "Aug 2022 - Nov 2022",
+    location: "New Delhi, India",
+    description: "Validated CRM workflows and tested outreach processes across 10+ client accounts, ensuring accurate lead tracking and reporting. Reviewed campaign performance data and identified issues affecting engagement, contributing to a 15% improvement in outreach quality. Conducted quality checks on cold email templates, improving consistency and compliance with targeting criteria.",
     achievements: [
-      "Designed AI-powered caching system using CNN & MLP models, reducing data retrieval latency by 23%",
-      "Applied association rule mining and sequence mining techniques, accelerating query response time by 25%",
-      "Developed pattern recognition algorithms with Keras/TensorFlow, increasing cache hit rate by 35%"
+      
     ],
-    technologies: ["Python", "TensorFlow", "Keras", "CNN", "MLP", "Machine Learning", "Distributed Systems", "Data Mining", "Pattern Recognition"],
-    logo: "/images/logos/srm-university.png",
+    technologies: ["CRM", "LinkedIn Sales Navigator", "Email Marketing", "Lead Generation", "Data Analysis"],
     type: "internship"
-  },
-  {
-    id: "research-intern-prediction",
-    company: "Associate Dean Professor T Ragunathan",
-    role: "Research Intern | Higher Education Prediction Algorithm",
-    duration: "Jul 2022 - Sep 2022",
-    location: "Guntur, Andhra Pradesh, India",
-    description: "Built ML classification model for higher education admission prediction, processing large-scale student data to identify key admission factors.",
-    achievements: [
-      "Built ML classification model using Naive Bayes & KNN algorithms, achieving 78% prediction accuracy",
-      "Processed 10,000+ student records, identifying key admission factors: CGPA, GRE, TOEFL scores",
-      "Reduced data preprocessing time by 40% through automated cleaning and feature engineering",
-      "Delivered predictive insights helping 200+ students optimize college application strategies"
-    ],
-    technologies: ["Classification", "MATLAB", "Machine Learning", "Naive Bayes", "KNN", "Data Preprocessing", "Feature Engineering", "Statistical Analysis"],
-    logo: "/images/logos/research.png",
-    type: "part-time"
   }
 ];

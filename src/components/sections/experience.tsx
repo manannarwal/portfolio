@@ -17,13 +17,13 @@ export function Experience() {
           variants={ANIMATION_VARIANTS.fadeUp}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 pb-8">
             Work <span className="gradient-text">Experience</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          {/* <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Building impactful solutions and optimizing cloud infrastructure
             to drive business success.
-          </p>
+          </p> */}
         </motion.div>
 
         {/* Experience Timeline */}

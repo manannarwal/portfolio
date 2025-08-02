@@ -1,4 +1,3 @@
-// Leadership and achievements data from Nikhila's resume
 
 export interface Achievement {
   id: string;
@@ -11,17 +10,30 @@ export interface Achievement {
 
 export const achievementsData: Achievement[] = [
   {
-    id: "board-member",
-    title: "Board Member",
-    organization: "App Design and Development Club",
-    description: "Led technical initiatives and mentored junior developers to improve their programming skills.",
+    id: "sih-runner-up",
+    title: "Runner Up - Smart India Hackathon",
+    organization: "Government of India",
+    description: "Secured first place in the college round of Smart India Hackathon, developing innovative technology solutions for real-world problems.",
     impact: [
-      "Mentored 15+ junior developers",
-      "Improved core programming skills by 60%",
-      "Conducted tailored workshops and code reviews",
-      "Implemented project-based training programs"
+      "Competed against 100+ teams from various colleges",
+      "Developed a comprehensive solution addressing social challenges",
+      "Demonstrated strong problem-solving and teamwork skills",
+      "Gained recognition for technical innovation and presentation"
     ],
-    icon: "👥"
+    icon: "🏆"
+  },
+  {
+    id: "smart-dust-collector",
+    title: "Smart Dust Collector",
+    organization: "Summer Internship Project",
+    description: "Designed and developed an intelligent dust collection system during summer internship, integrating IoT sensors and automated controls.",
+    impact: [
+      "Built end-to-end IoT solution with sensor integration",
+      "Implemented automated dust detection algorithms",
+      "Designed user-friendly interface for monitoring",
+      "Applied theoretical knowledge to solve practical problems"
+    ],
+    icon: "🗂️"
   }
 ];
 
@@ -38,21 +50,19 @@ export interface Education {
 
 export const educationData: Education[] = [
   {
-    id: "northeastern",
-    institution: "Northeastern University",
-    degree: "Master's in Computer Science",
-    duration: "Jan 2025 - May 2027",
-    location: "Portland, Maine, USA",
-    gpa: "3.83 / 4.00",
-    logo: "/images/logos/northeastern.png"
+    id: "uscit",
+    institution: "University School of Computer and Information Technology (USCIT), GGSIPU",
+    degree: "Master's in Computer Applications",
+    duration: "Oct 2025 - July 2027",
+    location: "New Delhi, India",
+    gpa: "NA",
   },
   {
-    id: "srm",
-    institution: "SRM University - AP",
-    degree: "Bachelor of Science in Computer Science",
-    duration: "Oct 2020 - May 2024",
-    location: "Vijayawada, India",
-    gpa: "7.71 / 10.00",
-    logo: "/images/logos/srm.png"
+    id: "iitm",
+    institution: "Institute of Information Technology and Management (IITM)",
+    degree: "Bachelor's in Computer Applications",
+    duration: "Oct 2022 - July 2025",
+    location: "New Delhi, India",
+    gpa: "8.4",
   }
 ];

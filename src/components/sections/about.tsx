@@ -3,10 +3,14 @@
 import { motion } from "framer-motion";
 import { ANIMATION_VARIANTS } from "@/lib/constants";
 import { educationData } from "@/data/achievements";
+import { skillsData } from "@/data/skills";
 import { GraduationCap, MapPin, Calendar } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { 
   ScrollReveal, 
-  GradientText
+  GradientText,
+  TiltCard
 } from "@/components/animations";
 
 export function About() {
@@ -27,7 +31,7 @@ export function About() {
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               Passionate about building innovative solutions at the intersection of
-              cloud computing, full-stack development, and emerging technologies.
+              full-stack development and emerging technologies.
             </p>
           </motion.div>
         </ScrollReveal>
@@ -43,21 +47,18 @@ export function About() {
         >          <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
               <p className="text-lg leading-relaxed">
-                Hi! I&apos;m Nikhila Koneru, currently pursuing my Master&apos;s in Computer Science
-                at Northeastern University. With a strong foundation in cloud computing
-                and full-stack development, I love creating impactful solutions that make
-                a difference.
+                Hi! I&apos;m Manan Narwal, currently pursuing my Master&apos;s in Computer Applications
+                at USCIT, GGSIPU. With a strong foundation in full-stack development and cloud computing,
+                I love creating impactful solutions that make a difference.
               </p>
               <p className="text-lg leading-relaxed">
-                During my internship at Tech Mahindra, I optimized deployment pipelines
-                achieving a 30% performance boost and implemented automation strategies
-                that reduced manual intervention by 40%. I&apos;m passionate about leveraging
-                technology to solve real-world problems.
+                During my internship at Banao Technologies, I Executed 1000+ regression and ad-hoc test cases for iOS applications, improving
+                bug detection rates by 20%, achieving a 30% performance boost.
               </p>
               <p className="text-lg leading-relaxed">
-                As a Board Member of the App Design and Development Club, I&apos;ve mentored
+                As the president of the Software Development Cell at IITM, I&apos;ve mentored
                 15+ junior developers, helping them improve their programming skills by 60%
-                through workshops and hands-on training.
+                through workshops and organized hackathons.
               </p>
             </div>
             

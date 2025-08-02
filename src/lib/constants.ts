@@ -1,15 +1,15 @@
 // App constants
 
 export const SITE_CONFIG = {
-  name: "Nikhila Koneru",
-  description: "Master's in Computer Science student at Northeastern University | Full-stack Developer | Cloud Computing Enthusiast",
-  url: "https://nikhilakoneru.com",
+  name: "Manan Narwal",
+  description: "Master's in lauda student at Northeastern University | Full-stack Developer | Cloud Computing Enthusiast",
+  url: "https://manannarwal.vercel.app",
   ogImage: "/images/nikhila/og-image.png",
   links: {
-    email: "nikhila.koneru1@gmail.com",
-    github: "https://github.com/Nikhilakoneru",
-    linkedin: "https://linkedin.com/in/nikhila-koneru",
-    phone: "+1 2073320512"
+    email: "manannarwal12345@gmail.com",
+    github: "https://github.com/manannarwal",
+    linkedin: "https://linkedin.com/in/manannarwal",
+    phone: "+91 8506055966"
   }
 };
 
@@ -18,7 +18,6 @@ export const NAV_ITEMS = [
   { label: "About", href: "/about" },
   { label: "Experience", href: "/experience" },
   { label: "Projects", href: "/projects" },
-  { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" }
 ];
 

@@ -1,4 +1,3 @@
-// Skills data categorized from Nikhila's resume
 
 export interface Skill {
   name: string;
@@ -22,20 +21,18 @@ export const skillsData: SkillCategory[] = [
       { name: "Python", level: 88 },
       { name: "Java", level: 85 },
       { name: "C++", level: 80 },
-      { name: "Dart", level: 75 },
-      { name: "Kotlin", level: 75 },
-      { name: "Solidity", level: 70 },
       { name: "SQL", level: 85 }
     ]
   },
   {
     title: "Frontend Development",
     icon: "🎨",
-    skills: [      { name: "React.js", level: 90 },
+    skills: [
+      { name: "HTML", level: 90 },
+      { name: "CSS", level: 88 },
+      { name: "React.js", level: 90 },
       { name: "Next.js", level: 85 },
-      { name: "Tailwind CSS", level: 88 },
-      { name: "Three.js", level: 75 },
-      { name: "Android SDK", level: 80 }
+      { name: "Tailwind CSS", level: 88 }
     ]
   },
   {
@@ -44,46 +41,11 @@ export const skillsData: SkillCategory[] = [
     skills: [
       { name: "Node.js", level: 88 },
       { name: "Express.js", level: 85 },
-      { name: "Flask", level: 75 },
+      { name: "REST API", level: 85 },
       { name: "MongoDB", level: 85 },
+      { name: "MySQL", level: 80 },
+      { name: "PostgreSQL", level: 78 },
       { name: "Firebase", level: 90 }
-    ]
-  },
-  {
-    title: "Cloud & DevOps",
-    icon: "☁️",
-    skills: [
-      { name: "AWS", level: 85 },
-      { name: "Azure", level: 80 },
-      { name: "GCP", level: 78 },
-      { name: "Docker", level: 82 },
-      { name: "Kubernetes", level: 75 },
-      { name: "Jenkins", level: 70 }
-    ]
-  },  {
-    title: "ML & Data Science",
-    icon: "🤖",
-    skills: [
-      { name: "TensorFlow", level: 80 },
-      { name: "PyTorch", level: 78 },
-      { name: "Keras", level: 82 },
-      { name: "Pandas", level: 85 },
-      { name: "NumPy", level: 85 },
-      { name: "Scikit-learn", level: 80 },
-      { name: "OpenCV", level: 75 }
-    ]
-  },
-  {
-    title: "Blockchain & Web3",
-    icon: "🔗",
-    skills: [
-      { name: "Web3.js", level: 78 },
-      { name: "Ethers.js", level: 75 },
-      { name: "IPFS", level: 70 },
-      { name: "Ethereum", level: 75 },
-      { name: "Polygon", level: 72 },
-      { name: "Aptos", level: 68 },
-      { name: "Move", level: 65 }
     ]
   }
 ];

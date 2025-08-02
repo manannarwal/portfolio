@@ -52,7 +52,7 @@ export function Hero() {
             }}
           >
             <GradientText className="font-display">
-              Nikhila Koneru
+              Manan Narwal
             </GradientText>
           </motion.h1>
 
@@ -62,14 +62,15 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-xl md:text-2xl text-muted-foreground mb-8"
           >
-            Master&apos;s in Computer Science Student
+            Master&apos;s in Computer Applications Student
             <span className="block mt-2">
               <Typewriter 
                 words={[
                   "Full-Stack Developer",
                   "Cloud Computing Enthusiast",
                   "Problem Solver",
-                  "Tech Innovator"
+                  "Tech Innovator",
+                  "Software Tester"
                 ]}
                 className="text-primary font-semibold"
               />

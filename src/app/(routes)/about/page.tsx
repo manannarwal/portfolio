@@ -4,8 +4,8 @@ import { Skills } from "@/components/sections/skills";
 import { Achievements } from "@/components/sections/achievements";
 
 export const metadata: Metadata = {
-  title: "About | Nikhila Koneru",
-  description: "Learn more about Nikhila Koneru - Master's in Computer Science student at Northeastern University",
+  title: "About | Manan Narwal",
+  description: "Learn more about Manan Narwal - Master's in Computer Science student at USICT, GGSIPU",
 };
 
 export default function AboutPage() {

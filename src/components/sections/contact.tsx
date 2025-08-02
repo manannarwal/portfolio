@@ -1,10 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import { useForm as useFormspree } from "@formspree/react";
 import { ANIMATION_VARIANTS, SITE_CONFIG } from "@/lib/constants";
 import { Mail, Phone, Send, Loader2, CheckCircle, AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -20,8 +21,10 @@ const contactSchema = z.object({
 type ContactFormData = z.infer<typeof contactSchema>;
 
 export function Contact() {
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+  
+  // Use Formspree's official React hook
+  const [formspreeState, submitToFormspree] = useFormspree("xeoggvpd");
 
   const {
     register,
@@ -33,27 +36,25 @@ export function Contact() {
   });
 
   const onSubmit = async (data: ContactFormData) => {
-    setIsSubmitting(true);
-    setSubmitStatus("idle");
-
     try {
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 2000));
-      
-      // In real implementation, you would send the email here
-      console.log("Form submitted:", data);
-      
-      setSubmitStatus("success");
-      reset();
-      
-      // Reset success message after 5 seconds
-      setTimeout(() => setSubmitStatus("idle"), 5000);
-    } catch {
+      // Submit directly using Formspree's hook - this bypasses spam filtering
+      await submitToFormspree(data);
+    } catch (error) {
+      console.error('Form submission error:', error);
       setSubmitStatus("error");
-    } finally {
-      setIsSubmitting(false);
     }
   };
+
+  // Update status based on Formspree state
+  useEffect(() => {
+    if (formspreeState.succeeded) {
+      setSubmitStatus("success");
+      reset();
+      setTimeout(() => setSubmitStatus("idle"), 5000);
+    } else if (formspreeState.errors && Object.keys(formspreeState.errors).length > 0) {
+      setSubmitStatus("error");
+    }
+  }, [formspreeState.succeeded, formspreeState.errors, reset]);
   return (
     <section className="py-20 px-4">
       <div className="container mx-auto max-w-5xl">
@@ -87,8 +88,8 @@ export function Contact() {
             <div>
               <h3 className="text-2xl font-semibold mb-6">Let&apos;s Connect</h3>
               <p className="text-muted-foreground mb-8">
-                I&apos;m currently pursuing my Master&apos;s at Northeastern University and
-                actively seeking opportunities in cloud computing, full-stack development,
+                I&apos;m currently pursuing my Master&apos;s at USICT, GGSIPU and
+                actively seeking opportunities in full-stack development, Software Testing
                 and emerging technologies.
               </p>
             </div>
@@ -138,7 +139,7 @@ export function Contact() {
                 <span className="font-medium">Available for opportunities</span>
               </div>
               <p className="text-sm text-muted-foreground">
-                Expected graduation: May 2027 • Open to internships and full-time roles
+                Expected graduation: July 2027 • Open to internships and full-time roles
               </p>
             </div>
           </motion.div>
@@ -150,7 +151,10 @@ export function Contact() {
             variants={ANIMATION_VARIANTS.fadeUp}
             transition={{ delay: 0.3 }}
           >
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+            <form 
+              onSubmit={handleSubmit(onSubmit)} 
+              className="space-y-6"
+            >
               {/* Name Field */}
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">
@@ -218,14 +222,23 @@ export function Contact() {
                 )}
               </div>
 
+              {/* Honeypot field - hidden from users but visible to bots */}
+              <input
+                type="text"
+                name="_gotcha"
+                style={{ display: 'none' }}
+                tabIndex={-1}
+                autoComplete="off"
+              />
+
               {/* Submit Button */}
               <Button
                 type="submit"
-                disabled={isSubmitting}
+                disabled={formspreeState.submitting}
                 className="w-full"
                 size="lg"
               >
-                {isSubmitting ? (
+                {formspreeState.submitting ? (
                   <>
                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                     Sending...

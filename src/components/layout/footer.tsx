@@ -12,11 +12,10 @@ export function Footer() {
           {/* About Section */}
           <div className="space-y-3">
             <h3 className="font-display text-lg font-bold gradient-text">
-              Nikhila Koneru
+              Manan Narwal
             </h3>
             <p className="text-sm text-muted-foreground">
-              Master&apos;s in Computer Science student passionate about cloud computing,
-              full-stack development, and emerging technologies.
+              Master&apos;s in Computer Applications student passionate about full-stack development and emerging technologies.
             </p>
           </div>
 

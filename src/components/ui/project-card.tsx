@@ -17,7 +17,7 @@ interface ProjectCardProps {
 export function ProjectCard({ project, detailed = false }: ProjectCardProps) {
   return (
     <TiltCard className="h-full">
-      <Card className="group h-full flex flex-col hover:shadow-xl transition-all duration-300 overflow-hidden border-border/50 hover:border-primary/50">
+      <Card className="project-card group h-full flex flex-col hover:shadow-xl transition-all duration-300 overflow-hidden border-border/50 hover:border-primary/50">
         {/* Project Image */}
         <div className="relative h-48 overflow-hidden bg-gradient-to-br from-primary/10 via-accent/10 to-primary/10">
           {project.image ? (

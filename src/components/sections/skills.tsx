@@ -10,10 +10,7 @@ import { TiltCard } from "@/components/animations";
 const categoryDescriptions: Record<string, string> = {
   "Programming Languages": "Proficient in multiple paradigms including OOP, functional, and procedural programming",
   "Frontend Development": "Creating responsive, interactive, and performant user interfaces with modern frameworks",
-  "Backend & Databases": "Building scalable server-side applications and managing both SQL and NoSQL databases",
-  "Cloud & DevOps": "Expertise in multi-cloud environments with focus on automation and infrastructure as code",
-  "ML & Data Science": "Developing intelligent systems using deep learning, neural networks, and data analysis",
-  "Blockchain & Web3": "Building decentralized applications and smart contracts on various blockchain platforms"
+  "Backend & Databases": "Building scalable server-side applications and managing both SQL and NoSQL databases"
 };
 
 const getProficiencyLevel = (level: number) => {
@@ -25,7 +22,7 @@ const getProficiencyLevel = (level: number) => {
 
 export function Skills() {
   return (
-    <section className="py-20 px-4 bg-muted/30">
+    <section className="py-20 px-4 bg-muted/30" id="technical-skills">
       <div className="container mx-auto max-w-7xl">
         {/* Section Header */}
         <motion.div
@@ -58,14 +55,9 @@ export function Skills() {
               <TiltCard className="h-full">
                 <Card className="h-full hover:shadow-xl transition-all duration-300 border-border/50 hover:border-primary/50 group">
                   <CardHeader className="pb-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <div className="flex items-center">
-                        <span className="text-3xl mr-3">{category.icon}</span>
-                        <CardTitle className="text-xl">{category.title}</CardTitle>
-                      </div>
-                      <Badge variant="outline" className="text-xs border-lavender/50 badge-lavender-outline">
-                        {category.skills.length} skills
-                      </Badge>
+                    <div className="flex items-center mb-2">
+                      <span className="text-3xl mr-3">{category.icon}</span>
+                      <CardTitle className="text-lg sm:text-xl">{category.title}</CardTitle>
                     </div>
                     <p className="text-sm text-muted-foreground">
                       {categoryDescriptions[category.title]}
@@ -73,58 +65,28 @@ export function Skills() {
                   </CardHeader>
                   
                   <CardContent>
-                    <div className="space-y-4">
-                      {category.skills.map((skill, skillIndex) => {
-                        const proficiency = getProficiencyLevel(skill.level);
-                        return (
-                          <div key={skill.name} className="space-y-2">
-                            <div className="flex justify-between items-center">
-                              <span className="text-sm font-medium flex items-center gap-2">
-                                {skill.icon && <span className="text-lg">{skill.icon}</span>}
-                                {skill.name}
-                              </span>
-                              <div className="flex items-center gap-2">
-                                <span className={`text-xs font-medium ${proficiency.color}`}>
-                                  {proficiency.text}
-                                </span>
-                                <span className="text-xs text-muted-foreground">
-                                  {skill.level}%
-                                </span>
-                              </div>
-                            </div>
-                            <div className="relative h-2.5 bg-muted rounded-full overflow-hidden">
-                              <motion.div
-                                className="absolute inset-y-0 left-0 bg-gradient-to-r from-lavender via-teal to-lavender rounded-full"
-                                initial={{ width: 0 }}
-                                whileInView={{ width: `${skill.level}%` }}
-                                viewport={{ once: true }}
-                                transition={{
-                                  duration: 1.2,
-                                  delay: categoryIndex * 0.1 + skillIndex * 0.05,
-                                  ease: "easeOut"
-                                }}
-                              />
-                              <div 
-                                className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                                style={{
-                                  animation: "shimmer 2s infinite",
-                                  animationDelay: `${skillIndex * 0.1}s`
-                                }}
-                              />
-                            </div>
-                          </div>
-                        );
-                      })}
-                    </div>
-                    
-                    {/* Category Stats */}
-                    <div className="mt-6 pt-4 border-t border-border/50">
-                      <div className="flex justify-between text-xs text-muted-foreground">
-                        <span>Average Proficiency</span>
-                        <span className="font-medium text-foreground">
-                          {Math.round(category.skills.reduce((acc, skill) => acc + skill.level, 0) / category.skills.length)}%
-                        </span>
-                      </div>
+                    <div className="flex flex-wrap gap-2">
+                      {category.skills.map((skill, skillIndex) => (
+                        <motion.div
+                          key={skill.name}
+                          initial={{ opacity: 0, scale: 0.8 }}
+                          whileInView={{ opacity: 1, scale: 1 }}
+                          viewport={{ once: true }}
+                          transition={{
+                            duration: 0.3,
+                            delay: categoryIndex * 0.1 + skillIndex * 0.05,
+                            ease: "easeOut"
+                          }}
+                        >
+                          <Badge 
+                            variant="secondary" 
+                            className="text-xs px-3 py-1.5 bg-muted/50 hover:bg-muted transition-colors duration-200 border border-border/50 hover:border-primary/30"
+                          >
+                            {skill.icon && <span className="mr-1.5">{skill.icon}</span>}
+                            {skill.name}
+                          </Badge>
+                        </motion.div>
+                      ))}
                     </div>
                   </CardContent>
                 </Card>
@@ -142,8 +104,7 @@ export function Skills() {
           className="mt-12 text-center"
         >
           <p className="text-sm text-muted-foreground">
-            Also experienced with: Git, REST APIs, GraphQL, Agile/Scrum, Unit Testing, CI/CD, 
-            System Design, and Technical Documentation
+            Also experienced with: Git, REST APIs, Agile/Scrum, Unit Testing and Technical Documentation
           </p>
         </motion.div>
       </div>
