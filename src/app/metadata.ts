@@ -31,6 +31,11 @@ export const generateMetadata = (): Metadata => {
       },
     ],
     creator: SITE_CONFIG.name,
+    icons: {
+      icon: '/favicon2.ico?v=2',
+      shortcut: '/favicon2.ico?v=2',
+      apple: '/favicon2.ico?v=2',
+    },
     openGraph: {
       type: "website",
       locale: "en_US",

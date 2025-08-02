@@ -31,6 +31,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <link rel="icon" href="/favicon2.ico?v=2" sizes="any" />
+        <link rel="icon" href="/favicon2.ico?v=2" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon2.ico?v=2" />
         <JsonLd />
       </head>
       <body

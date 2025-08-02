@@ -4,7 +4,7 @@ export const SITE_CONFIG = {
   name: "Manan Narwal",
   description: "Master's in lauda student at Northeastern University | Full-stack Developer | Cloud Computing Enthusiast",
   url: "https://manannarwal.vercel.app",
-  ogImage: "/images/nikhila/og-image.png",
+  ogImage: "/images/manan/og-image.png",
   links: {
     email: "manannarwal12345@gmail.com",
     github: "https://github.com/manannarwal",
