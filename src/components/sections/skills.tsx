@@ -13,13 +13,6 @@ const categoryDescriptions: Record<string, string> = {
   "Backend & Databases": "Building scalable server-side applications and managing both SQL and NoSQL databases"
 };
 
-const getProficiencyLevel = (level: number) => {
-  if (level >= 90) return { text: "Expert", color: "text-teal" };
-  if (level >= 80) return { text: "Advanced", color: "text-lavender" };
-  if (level >= 70) return { text: "Proficient", color: "text-primary" };
-  return { text: "Learning", color: "text-muted-foreground" };
-};
-
 export function Skills() {
   return (
     <section className="py-20 px-4 bg-muted/30" id="technical-skills">

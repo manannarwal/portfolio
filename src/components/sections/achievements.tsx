@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { achievementsData } from "@/data/achievements";
 import { ANIMATION_VARIANTS } from "@/lib/constants";
-import { Award, Users, TrendingUp } from "lucide-react";
+import { TrendingUp } from "lucide-react";
 
 export function Achievements() {
   return (

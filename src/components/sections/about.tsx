@@ -3,14 +3,10 @@
 import { motion } from "framer-motion";
 import { ANIMATION_VARIANTS } from "@/lib/constants";
 import { educationData } from "@/data/achievements";
-import { skillsData } from "@/data/skills";
 import { GraduationCap, MapPin, Calendar } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { 
   ScrollReveal, 
-  GradientText,
-  TiltCard
+  GradientText
 } from "@/components/animations";
 
 export function About() {
