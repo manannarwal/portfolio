@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ExternalLink, Github } from "lucide-react";
@@ -15,6 +16,10 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project, detailed = false }: ProjectCardProps) {
+  const [showAllTech, setShowAllTech] = useState(false);
+  const techToShow = showAllTech ? project.technologies : project.technologies.slice(0, 4);
+  const hasMoreTech = project.technologies.length > 4;
+
   return (
     <TiltCard className="h-full">
       <Card className="project-card group h-full flex flex-col hover:shadow-xl transition-all duration-300 overflow-hidden border-border/50 hover:border-primary/50">
@@ -41,13 +46,13 @@ export function ProjectCard({ project, detailed = false }: ProjectCardProps) {
         </div>
         
         <CardHeader className="pb-3">
-          <h3 className="text-xl font-bold line-clamp-2 group-hover:text-primary transition-colors">
+          <h3 className="text-xl font-bold line-clamp-2 group-hover:text-primary transition-colors text-left">
             {project.title}
           </h3>
         </CardHeader>
         
         <CardContent className="flex-grow flex flex-col">
-          <p className="text-muted-foreground mb-4 text-sm leading-relaxed line-clamp-3">
+          <p className="text-muted-foreground mb-4 text-sm leading-relaxed line-clamp-3 text-left">
             {project.description}
           </p>
           
@@ -65,15 +70,26 @@ export function ProjectCard({ project, detailed = false }: ProjectCardProps) {
           
           {/* Technologies */}
           <div className="flex flex-wrap gap-1.5 mb-4">
-            {project.technologies.slice(0, 5).map((tech) => (
+            {techToShow.map((tech) => (
               <LavenderBadge key={tech}>
                 {tech}
               </LavenderBadge>
             ))}
-            {project.technologies.length > 5 && (
-              <LavenderBadge variant="outline">
-                +{project.technologies.length - 5} more
-              </LavenderBadge>
+            {hasMoreTech && (
+              <button
+                onClick={() => setShowAllTech(!showAllTech)}
+                className="inline-flex items-center"
+              >
+                <LavenderBadge 
+                  variant="outline" 
+                  className="cursor-pointer hover:bg-primary/10 hover:border-primary/50 transition-colors"
+                >
+                  {showAllTech 
+                    ? "Show less" 
+                    : `+${project.technologies.length - 4} more`
+                  }
+                </LavenderBadge>
+              </button>
             )}
           </div>
           

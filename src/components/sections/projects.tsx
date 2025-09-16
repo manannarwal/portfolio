@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,6 +10,38 @@ import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { LavenderBadge } from "@/components/ui/lavender-badge";
+
+function ProjectTechStack({ technologies }: { technologies: string[] }) {
+  const [showAllTech, setShowAllTech] = useState(false);
+  const techToShow = showAllTech ? technologies : technologies.slice(0, 4);
+  const hasMoreTech = technologies.length > 4;
+
+  return (
+    <div className="flex flex-wrap gap-1.5 mb-4">
+      {techToShow.map((tech) => (
+        <LavenderBadge key={tech}>
+          {tech}
+        </LavenderBadge>
+      ))}
+      {hasMoreTech && (
+        <button
+          onClick={() => setShowAllTech(!showAllTech)}
+          className="inline-flex items-center"
+        >
+          <LavenderBadge 
+            variant="outline" 
+            className="cursor-pointer hover:bg-primary/10 hover:border-primary/50 transition-colors"
+          >
+            {showAllTech 
+              ? "Show less" 
+              : `+${technologies.length - 4} more`
+            }
+          </LavenderBadge>
+        </button>
+      )}
+    </div>
+  );
+}
 
 export function Projects() {
   return (
@@ -71,13 +104,13 @@ export function Projects() {
                 </div>
                 
                 <CardHeader>
-                  <h3 className="text-xl font-bold group-hover:text-primary transition-colors line-clamp-2">
+                  <h3 className="text-xl font-bold group-hover:text-primary transition-colors line-clamp-2 text-left">
                     {project.title}
                   </h3>
                 </CardHeader>
                 
                 <CardContent>
-                  <p className="text-muted-foreground mb-4 text-sm leading-relaxed text-center">
+                  <p className="text-muted-foreground mb-4 text-sm leading-relaxed text-left">
                     {project.description}
                   </p>
                   
@@ -92,18 +125,7 @@ export function Projects() {
                   </div>
                   
                   {/* Technologies */}
-                  <div className="flex flex-wrap gap-1.5 mb-4">
-                    {project.technologies.slice(0, 4).map((tech) => (
-                      <LavenderBadge key={tech}>
-                        {tech}
-                      </LavenderBadge>
-                    ))}
-                    {project.technologies.length > 4 && (
-                      <LavenderBadge variant="outline">
-                        +{project.technologies.length - 4} more
-                      </LavenderBadge>
-                    )}
-                  </div>
+                  <ProjectTechStack technologies={project.technologies} />
                   
                   {/* Action Buttons */}
                   <div className="flex gap-2 pt-4 border-t border-border/50">

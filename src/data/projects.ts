@@ -47,5 +47,23 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/manannarwal/SIH24",
     category: "ai"
   },
+  {
+    id: "health-tracker",
+    title: "Health Tracker",
+    description: "Health Parameters Tracking Web Application",
+    longDescription: "Health Tracker is a comprehensive web application designed to help users monitor and manage their health parameters effectively. The platform allows users to log various health metrics and track their progress over time. With a user-friendly interface and insightful visualizations, users can gain valuable insights into their health and make informed decisions.",
+    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Chart.js","Google SSO", "Tailwind CSS"],
+    features: [
+      "Log and track various health parameters",
+      "Visualize health data with interactive charts",
+      "Set health goals and monitor progress",
+      "Receive personalized health insights and recommendations",
+      "Secure authentication with Google SSO"
+    ],
+    image: "/images/projects/health-tracker/health-tracker.png",
+    demoUrl: "https://health--tracker.vercel.app",
+    githubUrl: "https://github.com/manannarwal/health-tracker",
+    category: "web"
+  },
   
 ];
