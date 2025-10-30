@@ -88,9 +88,9 @@ export function Contact() {
             <div>
               <h3 className="text-2xl font-semibold mb-6">Let&apos;s Connect</h3>
               <p className="text-muted-foreground mb-8">
-                I&apos;m currently pursuing my Master&apos;s at USICT, GGSIPU and
-                actively seeking opportunities in full-stack development, Software Testing
-                and emerging technologies.
+                I&apos;m a BCA Graduate from IITM and
+                actively seeking opportunities in Full-Stack Development, Software Testing
+                and Emerging Technologies.
               </p>
             </div>
             {/* Contact Cards */}
@@ -139,7 +139,7 @@ export function Contact() {
                 <span className="font-medium">Available for opportunities</span>
               </div>
               <p className="text-sm text-muted-foreground">
-                Expected graduation: July 2027 • Open to internships and full-time roles
+                Open to Full-time roles and Internships
               </p>
             </div>
           </motion.div>

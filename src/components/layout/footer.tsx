@@ -15,7 +15,7 @@ export function Footer() {
               Manan Narwal
             </h3>
             <p className="text-sm text-muted-foreground">
-              Master&apos;s in Computer Applications student passionate about full-stack development and emerging technologies.
+              BCA Graduate passionate about full-stack development and emerging technologies.
             </p>
           </div>
 

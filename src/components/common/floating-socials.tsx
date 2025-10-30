@@ -11,7 +11,7 @@ export function FloatingSocials() {
   const socials = [
     {
       icon: <FileText className="h-5 w-5" />,
-      href: "/resume.pdf",
+      href: "/Resume.pdf",
       label: "Resume",
       isDownload: true,
     },

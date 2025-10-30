@@ -62,7 +62,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-xl md:text-2xl text-muted-foreground mb-8"
           >
-            Master&apos;s in Computer Applications Student
+            Bachelor&apos;s of Computer Applications Graduate
             <span className="block mt-2">
               <Typewriter 
                 words={[

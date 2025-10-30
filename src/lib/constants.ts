@@ -2,7 +2,7 @@
 
 export const SITE_CONFIG = {
   name: "Manan Narwal",
-  description: "Master's in lauda student at Northeastern University | Full-stack Developer | Cloud Computing Enthusiast",
+  description: "Full-stack Developer | Cloud Computing Enthusiast",
   url: "https://manannarwal.vercel.app",
   ogImage: "/images/manan/og-image.png",
   links: {

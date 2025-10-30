@@ -43,8 +43,7 @@ export function About() {
         >          <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
               <p className="text-lg leading-relaxed">
-                Hi! I&apos;m Manan Narwal, currently pursuing my Master&apos;s in Computer Applications
-                at USCIT, GGSIPU. With a strong foundation in full-stack development and cloud computing,
+                Hi! I&apos;m Manan Narwal, a BCA Graduate from IITM. With a strong foundation in full-stack development and cloud computing,
                 I love creating impactful solutions that make a difference.
               </p>
               <p className="text-lg leading-relaxed">

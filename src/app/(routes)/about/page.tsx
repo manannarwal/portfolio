@@ -5,7 +5,7 @@ import { Achievements } from "@/components/sections/achievements";
 
 export const metadata: Metadata = {
   title: "About | Manan Narwal",
-  description: "Learn more about Manan Narwal - Master's in Computer Science student at USICT, GGSIPU",
+  description: "Learn more about Manan Narwal",
 };
 
 export default function AboutPage() {

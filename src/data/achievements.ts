@@ -50,19 +50,11 @@ export interface Education {
 
 export const educationData: Education[] = [
   {
-    id: "uscit",
-    institution: "University School of Computer and Information Technology (USCIT), GGSIPU",
-    degree: "Master's in Computer Applications",
-    duration: "Oct 2025 - July 2027",
-    location: "New Delhi, India",
-    gpa: "NA",
-  },
-  {
     id: "iitm",
     institution: "Institute of Information Technology and Management (IITM)",
     degree: "Bachelor's in Computer Applications",
     duration: "Oct 2022 - July 2025",
     location: "New Delhi, India",
-    gpa: "8.4",
+    gpa: "8.5",
   }
 ];
