@@ -137,7 +137,7 @@ export function Projects() {
                           className="flex items-center gap-2 hover:bg-primary/10 hover:text-primary hover:border-primary/50 transition-all"
                         >
                           <ExternalLink className="h-4 w-4" />
-                          Demo
+                          Deployed
                         </Button>
                       </Link>
                     )}
@@ -149,7 +149,7 @@ export function Projects() {
                           className="flex items-center gap-2 hover:bg-primary/10 hover:text-primary hover:border-primary/50 transition-all"
                         >
                           <Github className="h-4 w-4" />
-                          Code
+                          Source Code
                         </Button>
                       </Link>
                     )}

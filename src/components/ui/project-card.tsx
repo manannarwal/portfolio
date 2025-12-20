@@ -103,7 +103,7 @@ export function ProjectCard({ project, detailed = false }: ProjectCardProps) {
                   className="flex items-center gap-2 hover:bg-primary/10 hover:text-primary hover:border-primary/50 transition-all"
                 >
                   <Github className="w-4 h-4" />
-                  Code
+                  Source Code
                 </Button>
               </Link>
             )}
@@ -115,7 +115,7 @@ export function ProjectCard({ project, detailed = false }: ProjectCardProps) {
                   className="flex items-center gap-2 hover:bg-primary/10 hover:text-primary hover:border-primary/50 transition-all"
                 >
                   <ExternalLink className="w-4 h-4" />
-                  Demo
+                  Deployed
                 </Button>
               </Link>
             )}
