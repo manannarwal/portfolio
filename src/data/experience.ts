@@ -1,0 +1,55 @@
+
+export interface Experience {
+  id: string;
+  company: string;
+  role: string;
+  duration: string;
+  location: string;
+  description: string;
+  achievements: string[];
+  technologies: string[];
+  logo?: string;
+  type?: "internship" | "part-time" | "full-time";
+}
+
+export const experienceData: Experience[] = [
+  {
+    id: "highspring",
+    company: "Highspring India",
+    role: "Associate Research Analyst",
+    duration: "Nov 2025 - Present",
+    location: "Gurugram, India",
+    description: "Evaluated and verified 1000+ AI-generated responses per week for Google projects, improving factual accuracy andadherence to quality benchmarks. Built internal automation tools and scripts using Apps Script, JavaScript, and Python to streamline tasks and   improve team productivity by 20%.",
+    achievements: [
+
+    ],
+    technologies: ["JavaScript", "Apps Script", "Python", "MongoDB", "PowerBI", "Google Workspace"],
+    type: "full-time"
+  },
+  {
+    id: "banao",
+    company: "Banao Technologies",
+    role: "Software Testing Intern",
+    duration: "Jun 2023 - Nov 2023",
+    location: "New Delhi, India",
+    description: "Enhanced user experiences on iOS & Android apps by identifying bugs and validating performance fixes, contributing to a 40% reduction in load time. Executed manual and regression testing across multiple builds, ensuring seamless API integration and UI functionality. Reported critical issues and verified fixes using tools like Postman, Chrome DevTools, and Figma.",
+    achievements: [
+
+    ],
+    technologies: ["Figma", "Postman", "Regression Testing", "Adhoc Testing", "Compatibility Testing"],
+    type: "internship"
+  },
+  {
+    id: "scientificatt",
+    company: "Scientificatt",
+    role: "Sales and Business Development Executive",
+    duration: "Aug 2022 - Nov 2022",
+    location: "New Delhi, India",
+    description: "Validated CRM workflows and tested outreach processes across 10+ client accounts, ensuring accurate lead tracking and reporting. Reviewed campaign performance data and identified issues affecting engagement, contributing to a 15% improvement in outreach quality. Conducted quality checks on cold email templates, improving consistency and compliance with targeting criteria.",
+    achievements: [
+      
+    ],
+    technologies: ["CRM", "LinkedIn Sales Navigator", "Email Marketing", "Lead Generation", "Data Analysis"],
+    type: "internship"
+  }
+];
