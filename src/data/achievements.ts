@@ -55,6 +55,6 @@ export const educationData: Education[] = [
     degree: "Bachelor's in Computer Applications",
     duration: "Oct 2022 - July 2025",
     location: "New Delhi, India",
-    gpa: "8.5",
+    gpa: "8.7",
   }
 ];

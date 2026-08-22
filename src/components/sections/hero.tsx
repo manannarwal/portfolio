@@ -39,7 +39,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground mb-4"
           >
-            Hello, I&apos;m
+            Hey, this is
           </motion.p>
           {/* Name with gradient */}
           <motion.h1
@@ -62,9 +62,9 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-xl md:text-2xl text-muted-foreground mb-8"
           >
-            <b>Data Visualization Engineer</b> at Highspring India
+            <b>Software Engineer</b> at Highspring India
             <span className="block mt-2">
-              <Typewriter 
+              {/* <Typewriter 
                 words={[
                   "Full-Stack Developer",
                   "Cloud Computing Enthusiast",
@@ -73,7 +73,7 @@ export function Hero() {
                   "Software Tester"
                 ]}
                 className="text-primary font-semibold"
-              />
+              /> */}
             </span>
           </motion.div>
 

@@ -16,7 +16,7 @@ export const experienceData: Experience[] = [
   {
     id: "highspring",
     company: "Highspring India",
-    role: "Data Visualization Engineer",
+    role: "Software Engineer",
     duration: "Nov 2025 - Present",
     location: "Gurugram, India",
     description: "Designed and developed interactive dashboards for Google projects using internal tools (PLX), enabling data-driven decision-making across multiple workflows. Created custom visualizations and reports to monitor key performance indicators, resulting in a 25% improvement in data accessibility for stakeholders. Collaborated with cross-functional teams to integrate data sources and optimize dashboard performance, enhancing user experience and reducing load times by 30%.",
